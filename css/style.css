@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Kanit:ital,wght@1,200&family=Merriweather:wght@300&family=Montserrat:wght@200&family=New+Tegomin&family=Open+Sans:ital,wght@0,300;1,400&family=Roboto&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    background: url("https://i.pinimg.com/736x/de/bd/69/debd697762435e2025388c7ceb71b590.jpg")no-repeat center center/cover;
+    background-size:100vw 100vh;
+    height:100vh;
+    width:70vw;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 290px;
+} 
+
+#scoreBox{
+    position:absolute;
+    top:9px;
+    right:200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiScoreBox{
+    position:absolute;
+    top:55px;
+    right:156px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+
+}
+
+#board{
+    background: linear-gradient(rgb(167, 218, 167),rgb(217, 217, 154));
+    width:90vmin;
+    height:92vmin;
+    border:2px solid black; 
+    display:grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background-color: red;
+    border:2px solid purple;
+    background: linear-gradient(red, yellow);
+    transform:scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border:0.25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red , purple);
+    border:0.25vmin solid black;
+    border-radius: 8px;
+}
